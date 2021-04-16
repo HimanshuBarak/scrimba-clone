@@ -6,7 +6,10 @@ import guy from '../../assets/img/peep_guy.svg'
 
 const useStyles =makeStyles(theme=>({
     root:{
-         marginLeft:"55px",
+        [theme.breakpoints.up('md')]:{
+            marginLeft:"55px",
+          },
+        
          marginRight:"20px"
     },
    try_btn:{
@@ -49,6 +52,7 @@ function Header() {
             </Grid>
             </Box>
             
+           
         </div>
     )
 }
